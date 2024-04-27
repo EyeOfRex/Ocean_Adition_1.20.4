@@ -1,6 +1,7 @@
 package net.EOR.OceanAdition;
 
 import com.mojang.logging.LogUtils;
+import net.EOR.OceanAdition.Item.ModCreativeModTabs;
 import net.EOR.OceanAdition.Item.Mod_Item;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -23,6 +24,8 @@ public class OceanAdition {
 
     public OceanAdition() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModTabs.register(modEventBus);
 
         Mod_Item.register(modEventBus);
 
