@@ -2,7 +2,6 @@ package net.EOR.OceanAdition;
 
 import com.mojang.logging.LogUtils;
 import net.EOR.OceanAdition.Item.Mod_Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,8 +38,8 @@ public class OceanAdition {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(Mod_Item.PRISMARINE_SWORD);
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(Mod_Item.PRISMARINE_STICK);
         }
 
     }

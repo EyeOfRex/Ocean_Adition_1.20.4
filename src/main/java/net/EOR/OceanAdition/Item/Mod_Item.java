@@ -11,7 +11,7 @@ public class Mod_Item {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, OceanAdition.MOD_ID);
 
-    public static final RegistryObject<Item> PRISMARINE_SWORD= ITEMS.register("prismarine_sword",
+    public static final RegistryObject<Item> PRISMARINE_STICK = ITEMS.register("prismarine_stick",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
