@@ -13,6 +13,8 @@ public class Mod_Item {
 
     public static final RegistryObject<Item> PRISMARINE_STICK = ITEMS.register("prismarine_stick",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POLISHED_PRISMARINE =ITEMS.register("polished_prismarine",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

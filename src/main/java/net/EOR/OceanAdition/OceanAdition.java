@@ -40,6 +40,8 @@ public class OceanAdition {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Mod_Item.PRISMARINE_STICK);
+            event.accept(Mod_Item.POLISHED_PRISMARINE);
+
         }
 
     }
