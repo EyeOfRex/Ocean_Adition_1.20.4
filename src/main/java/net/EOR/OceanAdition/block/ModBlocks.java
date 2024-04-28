@@ -1,12 +1,11 @@
 package net.EOR.OceanAdition.block;
 
-import net.EOR.OceanAdition.Item.Mod_Item;
+import net.EOR.OceanAdition.Item.ModItems;
 import net.EOR.OceanAdition.OceanAdition;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,7 +21,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> POLISHED_PRISMARINE_BLOCK = registerBlock("polished_prismarine_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PRISMARINE_BRICKS).requiresCorrectToolForDrops().strength(5.0F, 6.0F).lightLevel((p_152605_) -> {
-                return 3;
+                return 5;
+            })));
+
+    public static final RegistryObject<Block> POLISHED_AMETHYST_BLOCK = registerBlock("polished_amethyst_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK).requiresCorrectToolForDrops().strength(5.0F, 6.0F).lightLevel((p_152605_) -> {
+                return 5;
             })));
 
 
@@ -34,7 +38,7 @@ public class ModBlocks {
 
 
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return Mod_Item.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

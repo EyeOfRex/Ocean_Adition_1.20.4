@@ -19,10 +19,11 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.PRISMARINE_SHARD))
                     .title(Component.translatable("creativetab.ocean_adition"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(Mod_Item.PRISMARINE_STICK.get());
-                        pOutput.accept(Mod_Item.POLISHED_PRISMARINE_SHARD.get());
+                        pOutput.accept(ModItems.POLISHED_AMETHYST_SHARD.get());
+                        pOutput.accept(ModItems.POLISHED_PRISMARINE_SHARD.get());
+                        pOutput.accept(ModItems.PRISMARINE_STICK.get());
                         pOutput.accept(ModBlocks.POLISHED_PRISMARINE_BLOCK.get());
-                        pOutput.accept(Mod_Item.POLISHED_AMETHYST_SHARD.get());
+                        pOutput.accept(ModBlocks.POLISHED_AMETHYST_BLOCK.get());
                     })
                     .build());
 

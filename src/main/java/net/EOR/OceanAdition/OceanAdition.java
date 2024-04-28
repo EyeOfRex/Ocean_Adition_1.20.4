@@ -2,9 +2,8 @@ package net.EOR.OceanAdition;
 
 import com.mojang.logging.LogUtils;
 import net.EOR.OceanAdition.Item.ModCreativeModTabs;
-import net.EOR.OceanAdition.Item.Mod_Item;
+import net.EOR.OceanAdition.Item.ModItems;
 import net.EOR.OceanAdition.block.ModBlocks;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -30,7 +29,7 @@ public class OceanAdition {
 
         ModCreativeModTabs.register(modEventBus);
 
-        Mod_Item.register(modEventBus);
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -43,14 +42,7 @@ public class OceanAdition {
     }
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Mod_Item.PRISMARINE_STICK);
-            event.accept(Mod_Item.POLISHED_PRISMARINE_SHARD);
-
-        }
-
-    }
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {}
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
