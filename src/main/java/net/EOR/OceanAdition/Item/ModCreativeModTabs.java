@@ -1,16 +1,14 @@
 package net.EOR.OceanAdition.Item;
 
 import net.EOR.OceanAdition.OceanAdition;
-import net.minecraft.client.tutorial.Tutorial;
+import net.EOR.OceanAdition.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.MinecartItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeModTabs {
@@ -22,7 +20,8 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.ocean_adition"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(Mod_Item.PRISMARINE_STICK.get());
-                        pOutput.accept(Mod_Item.POLISHED_PRISMARINE.get());
+                        pOutput.accept(Mod_Item.POLISHED_PRISMARINE_SHARD.get());
+                        pOutput.accept(ModBlocks.POLISHED_PRISMARINE_BLOCK.get());
                     })
                     .build());
 

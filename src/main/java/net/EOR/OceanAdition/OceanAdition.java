@@ -3,6 +3,7 @@ package net.EOR.OceanAdition;
 import com.mojang.logging.LogUtils;
 import net.EOR.OceanAdition.Item.ModCreativeModTabs;
 import net.EOR.OceanAdition.Item.Mod_Item;
+import net.EOR.OceanAdition.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,8 @@ public class OceanAdition {
     public OceanAdition() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModBlocks.register(modEventBus);
+
         ModCreativeModTabs.register(modEventBus);
 
         Mod_Item.register(modEventBus);
@@ -43,7 +46,7 @@ public class OceanAdition {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Mod_Item.PRISMARINE_STICK);
-            event.accept(Mod_Item.POLISHED_PRISMARINE);
+            event.accept(Mod_Item.POLISHED_PRISMARINE_SHARD);
 
         }
 
