@@ -22,6 +22,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(Mod_Item.PRISMARINE_STICK.get());
                         pOutput.accept(Mod_Item.POLISHED_PRISMARINE_SHARD.get());
                         pOutput.accept(ModBlocks.POLISHED_PRISMARINE_BLOCK.get());
+                        pOutput.accept(Mod_Item.POLISHED_AMETHYST_SHARD.get());
                     })
                     .build());
 

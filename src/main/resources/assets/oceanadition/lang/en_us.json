@@ -1,6 +1,9 @@
 {
   "item.oceanadition.prismarine_stick": "Prismarine stick",
   "item.oceanadition.polished_prismarine_shard": "Polished prismarine shard",
+  "item.oceanadition.polished_amethyst_shard": "Polished amethyst shard",
+
+  "block.oceanadition.polished_prismarine_block": "Polished prismarine block",
 
   "creativetab.ocean_adition": "Ocean Adition"
 }

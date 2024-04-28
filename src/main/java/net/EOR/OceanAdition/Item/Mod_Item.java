@@ -17,6 +17,9 @@ public class Mod_Item {
     public static final RegistryObject<Item> POLISHED_PRISMARINE_SHARD =ITEMS.register("polished_prismarine_shard",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> POLISHED_AMETHYST_SHARD =ITEMS.register("polished_amethyst_shard",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
 
