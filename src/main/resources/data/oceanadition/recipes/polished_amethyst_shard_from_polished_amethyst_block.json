@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "oceanadition:polished_prismarine_block"
+      "item": "oceanadition:polished_amethyst_block"
     }
   ],
   "result": {
-    "item": "oceanadtion:polished_prismarine_shard",
+    "item": "oceanadtion:polished_amethyst_shard",
     "count": 9
   }
 }
